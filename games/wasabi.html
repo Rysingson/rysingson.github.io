@@ -7,8 +7,9 @@
  </head>
  
  <body></body>
- 
- <center><object width="40%" height="75%" data="wasabi.swf"></center>
+<div class="container">
+    <embed><object data="wasabi.swf"></embed>
+</div>
  
  
  <style>
@@ -16,7 +17,19 @@
  body {
      background: black;
  
- }
+ } 
+ .container {
+position: relative;
+display: block;
+height:1136px;
+width:640px;
+}
+embed {
+position: relative;
+display: block;
+width: 100%;
+height: 100%;
+}
  </style>
 
   
