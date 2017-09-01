@@ -4,19 +4,14 @@
 </head>
 <center>
     <b>
-     <h1 style="text-decoration:underline;">hey gamers</h1>
+     <h1>hey gamers!</h1>
 	<h3 style="color:grey;">i'm rysingson. i make shit on the internet. check it...</h3>
      </b>
+	 <hr id="title" width="30%" size="5px">
  </center>
 <center>
-    <h2>
-        <a href="https://soundcloud.com/rysingson/">Soundcloud</a>
-    </h2>
-</center>
-<center>
-    <h2>
-        <a href="https://www.youtube.com/channel/UCMxwWT1AT1nN-SSND9_gi8w">Youtube</a>
-    </h2>
+    <h2><a href="https://soundcloud.com/rysingson/">Soundcloud</a></h2>
+	<h2><a href="https://www.youtube.com/channel/UCMxwWT1AT1nN-SSND9_gi8w">Youtube</a></h2>	
 </center>
 <center>
     <h3>
@@ -45,7 +40,7 @@ h1 {
     text-align: center;
     height: 320px;
      width: 800px;
-     line-height:600px;
+	line-height:600px;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
@@ -108,3 +103,10 @@ body {
     to   { opacity: 1; }
 }
      </style>
+
+	 <script>	 
+colors = ['#d6c2c2', '#d6c7c2', '#d6ccc2','#d6d1c2', '#d6d6c2', '#d1d6c2','#ccd6c2', '#c7d6c2', '#c2d6c2','#c2d6c7', '#c2d6cc', '#c2d6d1','#c2d6d6', '#c2d1d6', '#c2ccd6','#c2c7d6', '#c2c2d6', '#c7c2d6'
+,'#ccc2d6', '#d1c2d6', '#d6c2d6','#d6c2d1', '#d6c2cc', '#d6c2c7','#d6c2c2'];
+var random_color = colors[Math.floor(Math.random() * colors.length)];
+document.getElementById('title').color = random_color;
+	</script>
