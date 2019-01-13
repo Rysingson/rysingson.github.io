@@ -1,14 +1,41 @@
 <head>
     <title>/webzone/</title>
-     <link rel="shortcut icon" href="http://i.imgur.com/E7XbDoA.png" />
+     <link rel="shortcut icon" href="bart.png" />
 </head>
+<div>
 <body>
 <center>
+<br>
     <b>
-     <h1 id="title">hey gamers!</h1>
-	<h3 style="color:grey;">i'm rysingson. this is my website. i make shit on the internet. check it...</h3>
+     <h1 id="title">ツ rysingson.com ツ</h1>
+	 <div style="background-color: #FFA8BF; border: 1px 1px black;">
+	 	 <script>
+ var imlocation = "splash/";
+ var currentdate = 0;
+ var image_number = 0;
+ function ImageArray (n) {
+   this.length = n;
+   for (var i =1; i <= n; i++) {
+     this[i] = ' '
+   }
+ }
+ image = new ImageArray(6)
+ image[0] = 'splash1.png'
+ image[1] = 'splash2.png'
+ image[2] = 'splash3.png'
+ image[3] = 'splash4.png'
+ image[4] = 'splash5.png'
+ image[5] = 'splash6.png'
+ var rand = Math.floor(Math.random() * 6);
+ function randomimage() {
+ 	image_number = rand
+ 	return(image[image_number])
+ }
+ document.write("<img src='" + imlocation + randomimage()+ "'>");	
+	</script>
+	</div>
+	<h3 style="color:white;">i'm rylan. this is my website. i make shit for the internet.</h3>
      </b>
-	 <hr id="bar" width="30%" size="5px">
  </center>
 <center>
     <h2><a href="https://soundcloud.com/rysingson/">Soundcloud</a></h2>
@@ -21,6 +48,7 @@
         <a style="text-decoration:none; font-size:15px; color:red;" href="page2">(cont. →)</a>
     </h3>
 </center>
+</div>
 </body>
      <style> 
      iframe {display:none !important;}
@@ -32,19 +60,11 @@ p {
      
  img {
     margin-right: 4px;
-    position: relative;
-    top: 52px;
+    top: 500px;
     right: 40px;
-}
-a:visited
-{
-    color: #1004E7;
 }
 h1 {
     text-align: center;
-    height: 320px;
-     width: 800px;
-	line-height:600px;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
@@ -114,25 +134,23 @@ p {
 }
      
  img {
-    margin-right: 4px;
-    position: relative;
-    top: 52px;
-    right: 40px;
 }
 a:visited
 {
-    color: #1004E7;
+    color: #bcd3ff;
 }
 h1 {
+	color: #f7dfa8;
     text-align: center;
-    height: 320px;
-     width: 800px;
-	line-height:600px;
+	height: 15px;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
          -o-animation: fadein 1s; /* Opera < 12.1 */
             animation: fadein 1s;
+}
+
+h3{
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -159,6 +177,9 @@ h1 {
     to   { opacity: 1; }
 }
 body {
+text-shadow: 1px 1px #000000;
+background-color: #FFA8BF;
+
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
@@ -189,15 +210,10 @@ body {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+div{
+line-height:15px;
+}
      </style>
 
-	 <script>	 
-colors = ['#d6c2c2', '#d6c7c2', '#d6ccc2','#d6d1c2', '#d6d6c2', '#d1d6c2','#ccd6c2', '#c7d6c2', '#c2d6c2','#c2d6c7', '#c2d6cc', '#c2d6d1','#c2d6d6', '#c2d1d6', '#c2ccd6','#c2c7d6', '#c2c2d6', '#c7c2d6'
-,'#ccc2d6', '#d1c2d6', '#d6c2d6','#d6c2d1', '#d6c2cc', '#d6c2c7','#d6c2c2'];
-var random_color = colors[Math.floor(Math.random() * colors.length)];
-document.getElementById('bar').color = random_color;
-		 
-titles = ['whazzup?', 'hey gamers!', 'yo','ツ',];
-var random_title = titles[Math.floor(Math.random() * titles.length)];
-document.getElementById('title').innerHTML = random_title;
-	</script>
+
